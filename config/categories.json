@@ -1,5 +1,5 @@
 {
-  "_说明": "分类规则。topics 命中算 3 分，名称/描述命中算 1 分，取最高分；同分时排在前面的分类优先。想改分类：优先改 config/overrides.json，别直接改这里。",
+  "_说明": "分类规则（首次推送后微调，用于触发自动同步）。topics 命中算 3 分，名称/描述命中算 1 分，取最高分；同分时排在前面的分类优先。想改分类：优先改 config/overrides.json，别直接改这里。",
   "categories": [
     { "key": "agent", "label": "AI · Agent 与 Skills", "topics": ["agent-skills","agent-skill","ai-agents","ai-agent","agent","agents","claude-code","claude-skills","claude-code-skills","codex","codex-skill","dsh","dsh-plugin","agent-orchestration","agentic-ai","agentic-coding","agent-sandbox","subagent"], "text": ["skill","skills","claude code","harness","subagent","agent"] },
     { "key": "ai-infra", "label": "AI · 网关与推理", "topics": ["ai-gateway","llm-router","api-management","gateway","router","inference","provider","localllm","token"], "text": ["网关","路由","token","模型服务","api 管理"] },
