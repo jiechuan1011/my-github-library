@@ -165,7 +165,7 @@
           <option value="fresh">最近更新优先</option>
           <option value="name">名称 A → Z</option>
         </select>
-        <button class="btn" id="copy">复制为 Markdown</button>
+        <button class="btn" id="copy">复制当前列表</button>
       </div>
       <div class="chips" id="chips"></div>
       <div class="resultline"><div id="shown"></div><div id="hint"></div></div>
@@ -193,9 +193,9 @@
   </main>
 
   <footer>
-    数据抓取于 <b id="dataDate">—</b>，页面生成于 <b id="genDate">—</b>。星数、提交时间会变，重新运行 <code>node scripts/fetch.mjs &amp;&amp; node scripts/build.mjs</code> 即可刷新。<br>
-    小技巧：<kbd>/</kbd> 聚焦搜索，<kbd>Esc</kbd> 清空；点任意一行直接打开仓库。<br>
-    分类规则在 <code>config/categories.json</code>，人工覆盖在 <code>config/overrides.json</code>；加 <code>GITHUB_TOKEN</code> 环境变量可提高抓取额度并包含私有仓库。
+    数据抓取于 <b id="dataDate">—</b>，页面生成于 <b id="genDate">—</b>。想刷新数据：双击文件夹里的「更新.ps1」。<br>
+    小技巧：按 <kbd>/</kbd> 直接跳到搜索框，按 <kbd>Esc</kbd> 清空搜索；点任意一行可打开对应项目。<br>
+    看不太懂的话，双击文件夹里的「使用说明.txt」，那里面全是中文一步一步的写法。
   </footer>
 </div>
 <div class="toast" id="toast"></div>
@@ -361,7 +361,7 @@ $("#copy").addEventListener("click", async () => {
   const md = ["| 项目 | 说明 | 分类 | 星数 |", "|---|---|---|---:|"]
     .concat(list.map((s) => `| [${s.name}](${s.url}) | ${(s.description || "").replace(/\|/g, "\\|")} | ${s.catLabel} | ${s.stars} |`))
     .join("\n");
-  try { await navigator.clipboard.writeText(md); toast(`已复制 ${list.length} 行 Markdown`); }
+  try { await navigator.clipboard.writeText(md); toast(`已复制 ${list.length} 条，可以直接粘贴到笔记里`); }
   catch { toast("浏览器不允许写剪贴板，请手动选择复制"); }
 });
 document.addEventListener("keydown", (e) => {
