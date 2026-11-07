@@ -12,6 +12,15 @@ const profile = read("data/profile.json");
 const starsRaw = read("data/stars.json");
 const reposRaw = read("data/repos.json");
 
+let zh = {};
+try {
+  zh = read("config/中文说明.json");
+} catch {
+  zh = {};
+}
+const hasCJK = (s) => /[\u4e00-\u9fa5]/.test(s || "");
+const descZh = (s) => zh[s.full_name] || (hasCJK(s.description) ? s.description : "");
+
 const now = Date.now();
 
 const stars = starsRaw.map((s) => {
@@ -22,6 +31,7 @@ const stars = starsRaw.map((s) => {
     name: s.name,
     owner: s.owner,
     description: s.description,
+    descZh: descZh(s),
     language: s.language,
     stars: s.stars,
     topics: s.topics.slice(0, 5),

@@ -30,6 +30,7 @@
 | `scripts/review.mjs` | 命令行查看分类结果，调规则时用 |
 | `config/categories.json` | 分类规则（关键词 / topics） |
 | `config/overrides.json` | 人工指定分类，优先级最高 |
+| `config/中文说明.json` | 页面「说明」列的中文翻译；新收藏的仓库在这里补一行即可 |
 | `.github/workflows/sync.yml` | 推到 GitHub 后每天自动同步 |
 | `更新.ps1` | Windows 一键更新 + 打开网页 |
 
