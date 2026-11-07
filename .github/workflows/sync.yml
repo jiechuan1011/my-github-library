@@ -31,6 +31,10 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: 自动翻译新收藏的说明
+        continue-on-error: true
+        run: python3 scripts/translate.py
+
       - name: 生成网页
         run: node scripts/build.mjs
 

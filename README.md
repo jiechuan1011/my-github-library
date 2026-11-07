@@ -23,6 +23,7 @@
 | `data/repos.json` | 自己仓库的原始数据 + README/描述/许可证检查结果 |
 | `data/profile.json` | 账号信息 |
 | `scripts/fetch.mjs` | 抓数据（GitHub API） |
+| `scripts/translate.py` | 把新收藏的英文说明自动翻成中文（结果进 `config/中文说明.auto.json`） |
 | `scripts/classify.mjs` | 自动分类（规则打分） |
 | `scripts/audit-lib.mjs` | 体检规则（收藏卫生 + 仓库成熟度） |
 | `scripts/build.mjs` | 生成 `index.html` |
@@ -31,21 +32,26 @@
 | `config/categories.json` | 分类规则（关键词 / topics） |
 | `config/overrides.json` | 人工指定分类，优先级最高 |
 | `config/中文说明.json` | 页面「说明」列的中文翻译；新收藏的仓库在这里补一行即可 |
+| `config/中文说明.auto.json` | 自动翻译结果（页面标注「机翻」，可整篇删掉重跑） |
 | `.github/workflows/sync.yml` | 推到 GitHub 后每天自动同步 |
-| `更新.ps1` | Windows 一键更新 + 打开网页 |
+| `更新数据.bat` | Windows 一键更新（双击这个），会调用 `更新.ps1` 并打开网页 |
+| `更新.ps1` | 实际执行抓取/翻译/生成四步（被 bat 调用，也可以手动跑） |
 
 ---
 
 ## 日常使用
 
 ```powershell
-# 更新数据 → 重新生成网页和报告
+# 更新数据 → 自动翻译新收藏 → 重新生成网页和报告
 node scripts/fetch.mjs
+python scripts/translate.py
 node scripts/build.mjs
 node scripts/report.mjs
 ```
 
-Windows 也可以直接双击 **`更新.ps1`**（或右键 → 使用 PowerShell 运行）。
+Windows 也可以直接双击 **`更新数据.bat`**，它会绕过 PowerShell 的脚本限制，按上面的顺序自动跑完再打开网页。
+
+> 不要直接双击 `更新.ps1`：Windows 默认禁止运行未签名的 PowerShell 脚本，会报「未数字签名」。`更新数据.bat` 就是用来绕过这个限制的入口。
 
 ### 用 Token 提高额度（可选，但推荐）
 
@@ -64,6 +70,28 @@ Token 在 GitHub → Settings → Developer settings → Personal access tokens 
 $env:GH_USER = "另一个用户名"
 node scripts/fetch.mjs
 ```
+
+---
+
+## 说明列的中文是怎么来的
+
+优先级从高到低：
+
+1. **人工翻译**（`config/中文说明.json`）—— 现在这 94 条都是逐条翻的，质量最好
+2. **自动翻译**（`config/中文说明.auto.json`）—— 以后新收藏的项目，`更新.ps1` 会调免费翻译接口补上，页面标注「机翻」
+3. 仓库原本就是中文的，直接用原文
+4. 以上都没有，才显示英文原文
+
+所以新收藏会自动翻，已经翻好的人工版本不会被覆盖。想改某条，在人工表里加一行即可（人工优先）。
+
+## 是实时的吗
+
+不是。这是一个静态网页，显示的是「生成那一刻」的快照：
+
+- 双击 `更新.ps1` → 手动刷新一次
+- 推到 GitHub 后 → 每天北京时间 05:00 自动刷新一次
+
+页面本身不联网、不请求 GitHub，所以打开很快，但不会自己变。想要每天自动更新的效果，就走「放到 GitHub 上」那一节。
 
 ---
 

@@ -6,7 +6,8 @@ import { classify, CATEGORIES, freshness } from "./classify.mjs";
 import { starAudit, repoAudit, summarize } from "./audit-lib.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const read = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
+const readFile = (p) => readFileSync(join(ROOT, p), "utf8").replace(/^\uFEFF/, "");
+const read = (p) => JSON.parse(readFile(p));
 
 const profile = read("data/profile.json");
 const starsRaw = read("data/stars.json");
@@ -18,8 +19,16 @@ try {
 } catch {
   zh = {};
 }
+let autoZh = {};
+try {
+  autoZh = read("config/中文说明.auto.json");
+} catch {
+  autoZh = {};
+}
 const hasCJK = (s) => /[\u4e00-\u9fa5]/.test(s || "");
-const descZh = (s) => zh[s.full_name] || (hasCJK(s.description) ? s.description : "");
+// 人工翻译 > 自动翻译 > 原本就是中文 > 英文原文
+const descZh = (s) => zh[s.full_name] || autoZh[s.full_name] || (hasCJK(s.description) ? s.description : "");
+const isAutoZh = (s) => !zh[s.full_name] && !!autoZh[s.full_name];
 
 const now = Date.now();
 
@@ -32,6 +41,7 @@ const stars = starsRaw.map((s) => {
     owner: s.owner,
     description: s.description,
     descZh: descZh(s),
+    descAuto: isAutoZh(s),
     language: s.language,
     stars: s.stars,
     topics: s.topics.slice(0, 5),
