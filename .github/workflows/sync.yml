@@ -1,0 +1,50 @@
+name: 同步 GitHub 项目整理
+
+on:
+  schedule:
+    # 每天 UTC 21:00（北京时间次日 05:00）自动抓取一次
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "config/**"
+      - "template.html"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 抓取 Star 与仓库数据
+        run: node scripts/fetch.mjs
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成网页
+        run: node scripts/build.mjs
+
+      - name: 生成体检报告
+        run: node scripts/report.mjs
+
+      - name: 提交变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "没有变化，跳过提交"
+          else
+            git commit -m "chore: 同步 GitHub 项目数据 ($(date -u +%Y-%m-%d))"
+            git push
+          fi

@@ -1,0 +1,18 @@
+{
+  "_说明": "分类规则。topics 命中算 3 分，名称/描述命中算 1 分，取最高分；同分时排在前面的分类优先。想改分类：优先改 config/overrides.json，别直接改这里。",
+  "categories": [
+    { "key": "agent", "label": "AI · Agent 与 Skills", "topics": ["agent-skills","agent-skill","ai-agents","ai-agent","agent","agents","claude-code","claude-skills","claude-code-skills","codex","codex-skill","dsh","dsh-plugin","agent-orchestration","agentic-ai","agentic-coding","agent-sandbox","subagent"], "text": ["skill","skills","claude code","harness","subagent","agent"] },
+    { "key": "ai-infra", "label": "AI · 网关与推理", "topics": ["ai-gateway","llm-router","api-management","gateway","router","inference","provider","localllm","token"], "text": ["网关","路由","token","模型服务","api 管理"] },
+    { "key": "ai-app", "label": "AI · 应用与模型", "topics": ["ai","llm","chatbot","chat","ai-companion","ai-vtuber","ai-waifu","ai-tutor","large-language-models","chatgpt","bard","chatglm-6b","ai-education","ai-design","ai-ppt","ai-research","claude","deepseek","doubao"], "text": ["ai","llm","大模型","智能体"] },
+    { "key": "desktop", "label": "桌面与系统增强", "topics": ["desktop","desktop-app","desktop-cleanup","desktop-organizer","desktop-widget","desktop-widgets","windows","launcher","app-launcher","dock","finder","widget","bloatware","bloatware-removal","cleanup","fluent","acrylic","antiforensics","ccleaner-alternative","cleaner"], "text": ["windows","桌面","启动器","清理"] },
+    { "key": "dev-tool", "label": "开发工具 / CLI", "topics": ["cli","cli-tool","devtools","developer-tools","editor","vscode","git","documentation","docs","doctor","code-review","refactoring"], "text": ["cli","命令行","编辑器","重构"] },
+    { "key": "selfhost", "label": "自托管 / 运维", "topics": ["self-hosted","docker","monitoring","monitoring-tool","file-manager","file-sharing","file-browser","auth","authorization","server","devops"], "text": ["自托管","部署","运维","监控"] },
+    { "key": "web", "label": "Web / 建站 / 前端", "topics": ["web","cms","astro","static-site-generator","react","vue","frontend","website","blog","html","javascript","typescript"], "text": ["网站","前端","建站"] },
+    { "key": "mobile", "label": "移动端 / Android", "topics": ["android","android-app","android-automation","apk","xposed","flutter","ios","mobile","kotlin","dart"], "text": ["安卓","android","手机"] },
+    { "key": "resource", "label": "资源 / 学习 / 清单", "topics": ["awesome","tutorial","guide","education","learning","course","book","hellogithub","academic-writing","academic-pipeline"], "text": ["教程","学习","清单","入门","指南"] },
+    { "key": "media", "label": "影音 / 设计 / 内容", "topics": ["design","ui","illustration","video","music","audio","image","ppt","resume","chart","charting-library","drawing","visualization","data-visualization","anime","bilibili","e-reader","epub","eink","news","brush","canvas","motion"], "text": ["设计","封面","视频","绘图","音乐","阅读器"] },
+    { "key": "hardware", "label": "硬件 / IoT / 嵌入式", "topics": ["esp32","embedded","iot","hardware","csi","diy","diy-cam","diy-electronics","electronics","arduino"], "text": ["esp32","单片机","摄像头","嵌入式"] },
+    { "key": "life", "label": "生活 / 效率", "topics": ["habit","calorie","budget","finance","itinerary","travel","stock","sleep","productivity","notes","budgeting","calorie-counter","calories-tracker"], "text": ["记账","习惯","抢票","日程","效率"] },
+    { "key": "other", "label": "其他", "topics": [], "text": [] }
+  ]
+}

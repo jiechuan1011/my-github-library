@@ -1,0 +1,56 @@
+{
+  "_说明": "人工指定的分类，优先级高于自动规则。改这里即可覆盖任何仓库的分类。可用 key 见 config/categories.json。",
+  "farion1231/cc-switch": "ai-infra",
+  "rtk-ai/rtk": "ai-infra",
+  "weave-os/router": "ai-infra",
+  "Andyyyy64/whichllm": "ai-infra",
+  "QuantumNous/new-api": "ai-infra",
+
+  "Imbad0202/academic-research-skills": "agent",
+  "HKUDS/DeepTutor": "ai-app",
+  "THU-MAIC/OpenMAIC": "ai-app",
+  "antirez/ds4": "ai-app",
+
+  "nexu-io/open-design": "media",
+  "calesthio/OpenMontage": "media",
+  "JOYCEQL/magic-resume": "media",
+  "JefferyHcool/BiliNote": "media",
+  "jay3-yy/BiliPai": "media",
+  "tw93/Kami": "media",
+  "Geniusay/ChopperBot": "media",
+
+  "earthtojake/text-to-cad": "hardware",
+  "Abedkingfc91/pulseoximeter-esp32-project": "hardware",
+
+  "rohitg00/ai-engineering-from-scratch": "resource",
+  "fancyboi999/ai-engineering-from-scratch-zh": "resource",
+  "github/docs": "resource",
+  "andrewyng/context-hub": "resource",
+
+  "abhigyanpatwari/GitNexus": "dev-tool",
+  "Done-0/fuck-u-code": "dev-tool",
+  "karpathy/rendergit": "dev-tool",
+  "iOfficeAI/OfficeCLI": "dev-tool",
+
+  "steipete/CodexBar": "desktop",
+  "HuLaSpark/HuLa": "other",
+  "Stapxs/Stapxs-QQ-Lite-2.0": "other",
+
+  "ccch1mneyyy/dsh-Go": "mobile",
+  "echo-loop/Echo-Loop": "mobile",
+  "LIN428924379/baifanyu": "mobile",
+
+  "liketrek/TREK": "life",
+  "ellite/Wallos": "life",
+  "simonoppowa/OpenNutriTracker": "life",
+  "FriesI23/mhabit": "life",
+  "Tosencen/XMSLEEP": "life",
+  "pjialin/py12306": "life",
+  "pythonstock/stock": "life",
+  "refactoringhq/tolaria": "life",
+  "dedicatedcode/reitti": "life",
+  "NightTeam/invoice-manager": "life",
+
+  "macrozheng/mall": "other",
+  "rockbenben/fanqie-publisher": "other"
+}

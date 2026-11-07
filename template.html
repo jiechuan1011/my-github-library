@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的 GitHub 项目工作台</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --ink:#1b1f24; --ink2:#57606a; --ink3:#8b949e;
+    --line:#e3e6ea; --accent:#2f6feb; --accent-soft:#eaf1ff;
+    --ok:#1a7f37; --warn:#9a6700; --bad:#cf222e; --ok-soft:#e8f5ec; --warn-soft:#fff8e1; --bad-soft:#ffebe9;
+    --radius:12px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:30px 20px 60px}
+
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:6px}
+  .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  .kicker{font-size:11.5px;letter-spacing:.16em;color:var(--ink3);text-transform:uppercase;font-weight:600}
+  h1{font-size:29px;margin:7px 0 8px;letter-spacing:-.02em;line-height:1.25}
+  h1 .hl{color:var(--accent)}
+  .sub{margin:0;color:var(--ink2);font-size:14px;line-height:1.7;max-width:640px}
+  .who{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:13px}
+  .who .at{color:var(--ink3)}
+  .who b{font-weight:650}
+  .stats{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 13px;font-size:12.5px;color:var(--ink2)}
+  .stat b{color:var(--ink);font-size:16px;margin-right:4px;font-variant-numeric:tabular-nums}
+
+  .tabs{display:flex;gap:6px;margin:18px 0 4px;flex-wrap:wrap}
+  .tab{background:none;border:1px solid transparent;border-radius:9px;padding:9px 15px;font-size:14px;color:var(--ink2);cursor:pointer;font-family:var(--font);font-weight:550;transition:.15s}
+  .tab:hover{background:var(--card);color:var(--ink)}
+  .tab.on{background:var(--card);border-color:var(--line);color:var(--ink);box-shadow:0 1px 2px rgba(27,31,36,.05)}
+  .tab .cnt{display:inline-block;margin-left:6px;background:#eef1f4;border-radius:999px;padding:1px 7px;font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums}
+  .tab.on .cnt{background:var(--accent-soft);color:var(--accent)}
+
+  .toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:14px 0 10px}
+  .search{position:relative;flex:1 1 300px}
+  .search input{width:100%;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 13px 0 36px;font-size:14px;color:var(--ink);outline:none;font-family:var(--font)}
+  .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .search .ico{position:absolute;left:12px;top:11px;width:17px;height:17px;stroke:var(--ink3);fill:none;stroke-width:2}
+  select{height:40px;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 32px 0 12px;font-size:13.5px;font-family:var(--font);color:var(--ink);cursor:pointer;appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' fill='none' stroke='%238b949e' stroke-width='1.6' stroke-linecap='round'/></svg>");
+    background-repeat:no-repeat;background-position:right 11px center}
+  .btn{height:40px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:0 14px;font-size:13.5px;color:var(--ink);cursor:pointer;font-family:var(--font)}
+  .btn:hover{border-color:#c9d1d9}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .chip{border:1px solid var(--line);background:var(--card);color:var(--ink2);border-radius:999px;padding:5px 11px;font-size:12.5px;cursor:pointer;font-family:var(--font);white-space:nowrap}
+  .chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+  .chip .n{opacity:.55;margin-left:4px;font-variant-numeric:tabular-nums}
+
+  .tablecard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 2px rgba(27,31,36,.04)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  thead th{background:#fbfcfd;border-bottom:1px solid var(--line);text-align:left;font-size:11.5px;letter-spacing:.05em;color:var(--ink3);font-weight:600;padding:10px 13px;white-space:nowrap}
+  tbody tr{border-bottom:1px solid #f0f2f4;cursor:pointer}
+  tbody tr:last-child{border-bottom:none}
+  tbody tr:hover{background:#f8fafc}
+  td{padding:12px 13px;vertical-align:top}
+  .nm{font-weight:640;font-size:14px;color:var(--ink)}
+  .nm:hover{color:var(--accent)}
+  .repo{display:block;font-size:11.5px;color:var(--ink3);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-top:2px}
+  .desc{color:var(--ink2);line-height:1.55;min-width:250px}
+  .desc.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tags{margin-top:5px;display:flex;gap:4px;flex-wrap:wrap}
+  .tag{font-size:10.5px;color:#5a6672;background:#f1f3f6;border-radius:4px;padding:1px 5px}
+  .cat{white-space:nowrap;font-size:12px}
+  .cat span{display:inline-block;padding:2px 7px;border-radius:6px;background:#f2f4f7;color:var(--ink2)}
+  .lang{white-space:nowrap;font-size:12.5px;color:var(--ink2)}
+  .stars{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:650;font-size:13.5px}
+  .stars.hot{color:#c2410c}
+  .fresh{white-space:nowrap;font-size:12px;color:var(--ink2)}
+  .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:1px}
+  .dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)} .dot.dead{background:var(--bad)}
+  .arch{display:inline-block;font-size:10px;color:var(--bad);background:var(--bad-soft);border-radius:4px;padding:1px 5px;margin-left:5px}
+
+  .resultline{display:flex;justify-content:space-between;align-items:center;margin:0 2px 9px;font-size:12.5px;color:var(--ink3)}
+  .empty{text-align:center;padding:60px 20px;color:var(--ink3)}
+  .empty b{display:block;color:var(--ink);font-size:15px;margin-bottom:5px}
+
+  /* 我的仓库卡片 */
+  .repogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;margin-top:14px}
+  .rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:17px 18px}
+  .rcard h3{margin:0 0 3px;font-size:15.5px}
+  .rcard h3 a:hover{color:var(--accent)}
+  .rmeta{font-size:12px;color:var(--ink3);margin-bottom:10px;font-family:ui-monospace,monospace}
+  .rdesc{font-size:13px;color:var(--ink2);line-height:1.6;margin:0 0 12px;min-height:20px}
+  .rdesc.muted{color:var(--ink3);font-style:italic}
+  .score{display:flex;align-items:center;gap:9px;margin:10px 0 12px;font-size:11.5px;color:var(--ink3)}
+  .bar{flex:1;height:6px;background:#eef1f4;border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:99px;background:var(--ok)}
+  .bar.mid i{background:var(--warn)} .bar.low i{background:var(--bad)}
+  .issues{margin:0;padding:0;list-style:none}
+  .issues li{font-size:12.5px;color:var(--ink2);line-height:1.6;padding:6px 0 6px 19px;position:relative;border-top:1px dashed #eef0f3}
+  .issues li:first-child{border-top:none}
+  .issues li::before{content:"!";position:absolute;left:0;top:7px;width:14px;height:14px;border-radius:4px;background:var(--warn-soft);color:var(--warn);font-size:10px;font-weight:700;text-align:center;line-height:14px}
+  .issues li.high::before{background:var(--bad-soft);color:var(--bad)}
+  .issues li b{color:var(--ink);font-weight:600}
+  .issues li span{display:block;color:var(--ink3);font-size:12px;margin-top:1px}
+  .wins{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+  .win{font-size:11px;color:var(--ok);background:var(--ok-soft);border-radius:5px;padding:2px 7px}
+
+  /* 体检 */
+  .audithead{display:flex;align-items:baseline;justify-content:space-between;margin:18px 0 10px;gap:10px;flex-wrap:wrap}
+  .audithead h2{font-size:15.5px;margin:0}
+  .audithead .hint{font-size:12.5px;color:var(--ink3)}
+  .aitem{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:9px;display:flex;gap:13px;align-items:flex-start}
+  .lvl{flex:0 0 auto;font-size:11px;font-weight:700;border-radius:6px;padding:3px 8px;margin-top:1px;white-space:nowrap}
+  .lvl.high{background:var(--bad-soft);color:var(--bad)}
+  .lvl.mid{background:var(--warn-soft);color:var(--warn)}
+  .lvl.low{background:#eef1f4;color:var(--ink2)}
+  .aitem .body{min-width:0}
+  .aitem .t{font-weight:650;font-size:13.5px;margin-bottom:3px}
+  .aitem .d{font-size:12.5px;color:var(--ink2);line-height:1.65;word-break:break-word}
+  .aitem .a{font-size:12.5px;color:var(--ink3);line-height:1.65;margin-top:5px}
+  .aitem .a b{color:var(--ink2)}
+
+  footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink3);line-height:1.9}
+  footer code{background:#eef1f4;border-radius:4px;padding:1px 6px;font-family:ui-monospace,monospace;font-size:11.5px}
+  kbd{background:#eef1f4;border:1px solid #dee3e8;border-bottom-width:2px;border-radius:4px;padding:0 5px;font-size:11px;font-family:ui-monospace,monospace}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(10px);background:var(--ink);color:#fff;font-size:13px;padding:9px 16px;border-radius:9px;opacity:0;transition:.2s;pointer-events:none;z-index:50}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media(max-width:760px){
+    h1{font-size:22px}
+    .desc{min-width:0}
+    th.col-cat,td.col-cat,th.col-lang,td.col-lang{display:none}
+    .repogrid{grid-template-columns:1fr}
+    .wrap{padding:20px 12px 40px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top">
+      <div>
+        <div class="kicker">GitHub 项目工作台</div>
+        <h1>我的 GitHub <span class="hl">项目整理</span></h1>
+        <p class="sub">把 Star 过的仓库和自己名下的仓库放在一起：自动分类、标出停更与归档、体检缺什么，一页看完。</p>
+      </div>
+      <div class="who"><span class="at">@</span><b id="whoName">—</b></div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab on" data-tab="stars">Star 项目<span class="cnt" id="cntStars">0</span></button>
+    <button class="tab" data-tab="repos">我的仓库<span class="cnt" id="cntRepos">0</span></button>
+    <button class="tab" data-tab="audit">体检建议<span class="cnt" id="cntAudit">0</span></button>
+  </nav>
+
+  <main>
+    <section id="tab-stars">
+      <div class="toolbar">
+        <div class="search">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+          <input id="q" type="search" placeholder="搜索仓库名、描述、标签，例如：claude / 网关 / 照片 / android" autocomplete="off">
+        </div>
+        <select id="sort" aria-label="排序">
+          <option value="stars-desc">星数：从多到少</option>
+          <option value="stars-asc">星数：从少到多</option>
+          <option value="fresh">最近更新优先</option>
+          <option value="name">名称 A → Z</option>
+        </select>
+        <button class="btn" id="copy">复制为 Markdown</button>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="resultline"><div id="shown"></div><div id="hint"></div></div>
+      <div class="tablecard">
+        <table>
+          <thead><tr>
+            <th>#</th><th>项目</th><th>说明</th><th class="col-cat">分类</th><th class="col-lang">语言</th><th style="text-align:right">星数</th><th>最近提交</th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-repos" hidden>
+      <div class="audithead"><h2>我名下的仓库</h2><span class="hint" id="repoHint"></span></div>
+      <div class="repogrid" id="repogrid"></div>
+    </section>
+
+    <section id="tab-audit" hidden>
+      <div class="audithead"><h2>Star 项目体检</h2><span class="hint">收藏卫生：归档 / 停更 / 重复 / 缺描述</span></div>
+      <div id="auditStars"></div>
+      <div class="audithead"><h2>我的仓库待办</h2><span class="hint">按影响排序，前面几条优先做</span></div>
+      <div id="auditRepos"></div>
+    </section>
+  </main>
+
+  <footer>
+    数据抓取于 <b id="dataDate">—</b>，页面生成于 <b id="genDate">—</b>。星数、提交时间会变，重新运行 <code>node scripts/fetch.mjs &amp;&amp; node scripts/build.mjs</code> 即可刷新。<br>
+    小技巧：<kbd>/</kbd> 聚焦搜索，<kbd>Esc</kbd> 清空；点任意一行直接打开仓库。<br>
+    分类规则在 <code>config/categories.json</code>，人工覆盖在 <code>config/overrides.json</code>；加 <code>GITHUB_TOKEN</code> 环境变量可提高抓取额度并包含私有仓库。
+  </footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const DATA = /*__PAYLOAD__*/;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = (n) => (n || 0).toLocaleString("en-US");
+const month = (iso) => (iso ? iso.slice(0, 7).replace("-", "/") : "—");
+const state = { tab: "stars", q: "", cat: "全部", sort: "stars-desc" };
+
+/* ---------- 顶部统计 ---------- */
+function renderStats() {
+  const s = DATA.stats;
+  const items = [
+    ["收藏项目", s.stars],
+    ["我的仓库", s.repos],
+    ["分类", DATA.categories.length],
+    ["近 90 天活跃", s.active],
+    ["已归档", s.archived],
+    ["超一年未更新", s.stale],
+  ];
+  $("#stats").innerHTML = items.map(([k, v]) => `<div class="stat"><b>${v}</b>${k}</div>`).join("");
+  $("#whoName").textContent = DATA.profile.login;
+  $("#dataDate").textContent = DATA.dataDate;
+  $("#genDate").textContent = new Date(DATA.generatedAt).toLocaleString("zh-CN", { hour12: false });
+  $("#cntStars").textContent = s.stars;
+  $("#cntRepos").textContent = s.repos;
+  $("#cntAudit").textContent = DATA.auditStars.length + DATA.repos.reduce((a, r) => a + r.issues.length, 0);
+}
+
+/* ---------- Star 列表 ---------- */
+function buildChips() {
+  const all = [["全部", DATA.stars.length]].concat(DATA.categories.map((c) => [c.label, c.count]));
+  $("#chips").innerHTML = all.map(([label, n]) =>
+    `<button class="chip${label === state.cat ? " on" : ""}" data-cat="${esc(label)}">${esc(label)}<span class="n">${n}</span></button>`
+  ).join("");
+}
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  let list = DATA.stars.filter((s) => {
+    if (state.cat !== "全部" && s.catLabel !== state.cat) return false;
+    if (!q) return true;
+    const hay = `${s.full_name} ${s.description} ${s.topics.join(" ")} ${s.language} ${s.catLabel}`.toLowerCase();
+    return q.split(/\s+/).every((w) => hay.includes(w));
+  });
+  if (state.sort === "stars-desc") list.sort((a, b) => b.stars - a.stars);
+  else if (state.sort === "stars-asc") list.sort((a, b) => a.stars - b.stars);
+  else if (state.sort === "fresh") list.sort((a, b) => (b.pushed_at || "").localeCompare(a.pushed_at || ""));
+  else list.sort((a, b) => a.name.localeCompare(b.name, "en"));
+  return list;
+}
+function renderStars() {
+  const list = filtered();
+  $("#shown").innerHTML = `共 <b style="color:var(--ink)">${list.length}</b> 个结果`;
+  $("#hint").textContent = state.cat !== "全部" || state.q ? "已筛选" : "";
+  if (!list.length) {
+    $("#rows").innerHTML = `<tr><td colspan="7"><div class="empty"><b>没有匹配的项目</b>换个关键词，或点「全部」回到完整列表</div></td></tr>`;
+    return;
+  }
+  $("#rows").innerHTML = list.map((s, i) => `
+    <tr data-url="${esc(s.url)}">
+      <td style="color:var(--ink3);font-size:11.5px;font-variant-numeric:tabular-nums;padding-top:14px">${String(i + 1).padStart(2, "0")}</td>
+      <td>
+        <a class="nm" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>
+        ${s.archived ? '<span class="arch">已归档</span>' : ""}
+        <span class="repo">${esc(s.owner)}/${esc(s.name)}</span>
+      </td>
+      <td>
+        <div class="desc clamp">${esc(s.description || "（该仓库没有填写描述）")}</div>
+        <div class="tags">${s.topics.slice(0, 4).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+      </td>
+      <td class="cat col-cat"><span>${esc(s.catLabel)}</span></td>
+      <td class="lang col-lang">${esc(s.language || "—")}</td>
+      <td class="stars${s.stars >= 50000 ? " hot" : ""}">${fmt(s.stars)}</td>
+      <td class="fresh"><span class="dot ${s.freshLevel}"></span>${month(s.pushed_at)}<br><span style="color:var(--ink3);font-size:11px">${s.days} 天前</span></td>
+    </tr>`).join("");
+}
+
+/* ---------- 我的仓库 ---------- */
+function scoreClass(n) { return n >= 75 ? "" : n >= 50 ? "mid" : "low"; }
+function renderRepos() {
+  $("#repoHint").textContent = `${DATA.repos.length} 个公开仓库 · 评分看的是「描述 / README / 许可证 / Topics / 活跃度」`;
+  if (!DATA.repos.length) {
+    $("#repogrid").innerHTML = `<div class="empty"><b>没有公开仓库</b>私有仓库需要配置 GITHUB_TOKEN 后重新抓取</div>`;
+    return;
+  }
+  $("#repogrid").innerHTML = DATA.repos.map((r) => {
+    const cls = scoreClass(r.score);
+    return `
+    <div class="rcard">
+      <h3><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a></h3>
+      <div class="rmeta">${esc(r.full_name)} · ${esc(r.language || "无语言")} · ★ ${fmt(r.stars)}</div>
+      <p class="rdesc${r.description ? "" : " muted"}">${esc(r.description || "（还没有仓库描述）")}</p>
+      ${r.wins.length ? `<div class="wins">${r.wins.map((w) => `<span class="win">✓ ${esc(w)}</span>`).join("")}</div>` : ""}
+      <div class="score"><span>成熟度</span><div class="bar ${cls}"><i style="width:${r.score}%"></i></div><b style="color:var(--ink)">${r.score}</b>/100</div>
+      <ul class="issues">
+        ${r.issues.length ? r.issues.map((i) => `<li class="${i.level}"><b>${esc(i.title)}</b><span>${esc(i.fix)}</span></li>`).join("") : `<li style="color:var(--ok)">✓ 该做的都做了，保持更新即可</li>`}
+      </ul>
+      <div style="margin-top:11px;font-size:12px;color:var(--ink3)">最近提交 ${month(r.pushed_at)}（${r.days} 天前 · ${r.fresh}）</div>
+    </div>`;
+  }).join("");
+}
+
+/* ---------- 体检 ---------- */
+function renderAudit() {
+  const items = DATA.auditStars;
+  const lvlText = { high: "高", mid: "中", low: "低" };
+  $("#auditStars").innerHTML = items.length
+    ? items.map((a) => `
+      <div class="aitem">
+        <span class="lvl ${a.level}">${lvlText[a.level] || "低"} · ${esc(a.tag)}</span>
+        <div class="body">
+          <div class="t">${esc(a.title)}</div>
+          <div class="d">${esc(a.detail)}</div>
+          <div class="a"><b>建议：</b>${esc(a.action)}</div>
+        </div>
+      </div>`).join("")
+    : `<div class="aitem"><span class="lvl low">干净</span><div class="body"><div class="t">收藏很干净</div><div class="d">没有归档、长期停更或重复收藏。</div></div></div>`;
+
+  const repoIssues = [];
+  for (const r of DATA.repos) for (const i of r.issues) repoIssues.push({ ...i, repo: r.name, url: r.url });
+  const order = { high: 0, mid: 1, low: 2 };
+  repoIssues.sort((a, b) => order[a.level] - order[b.level]);
+  $("#auditRepos").innerHTML = repoIssues.length
+    ? repoIssues.map((i) => `
+      <div class="aitem">
+        <span class="lvl ${i.level}">${lvlText[i.level]} · ${i.level === "high" ? "优先" : "待办"}</span>
+        <div class="body">
+          <div class="t"><a href="${esc(i.url)}" target="_blank" rel="noopener" style="color:var(--accent)">${esc(i.repo)}</a> · ${esc(i.title)}</div>
+          <div class="d">${esc(i.fix)}</div>
+        </div>
+      </div>`).join("")
+    : `<div class="aitem"><span class="lvl low">OK</span><div class="body"><div class="t">仓库状态良好</div><div class="d">没有需要处理的问题。</div></div></div>`;
+}
+
+/* ---------- 交互 ---------- */
+function switchTab(name) {
+  state.tab = name;
+  document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("on", b.dataset.tab === name));
+  ["stars", "repos", "audit"].forEach((k) => { $("#tab-" + k).hidden = k !== name; });
+}
+document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => switchTab(b.dataset.tab)));
+$("#chips").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  state.cat = b.dataset.cat; buildChips(); renderStars();
+});
+$("#q").addEventListener("input", () => { state.q = $("#q").value; renderStars(); });
+$("#sort").addEventListener("change", () => { state.sort = $("#sort").value; renderStars(); });
+$("#rows").addEventListener("click", (e) => {
+  if (e.target.closest("a")) return;
+  const tr = e.target.closest("tr"); if (!tr || !tr.dataset.url) return;
+  if (window.getSelection && String(window.getSelection()).length) return;
+  window.open(tr.dataset.url, "_blank", "noopener");
+});
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("on");
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("on"), 1800);
+}
+$("#copy").addEventListener("click", async () => {
+  const list = filtered();
+  const md = ["| 项目 | 说明 | 分类 | 星数 |", "|---|---|---|---:|"]
+    .concat(list.map((s) => `| [${s.name}](${s.url}) | ${(s.description || "").replace(/\|/g, "\\|")} | ${s.catLabel} | ${s.stars} |`))
+    .join("\n");
+  try { await navigator.clipboard.writeText(md); toast(`已复制 ${list.length} 行 Markdown`); }
+  catch { toast("浏览器不允许写剪贴板，请手动选择复制"); }
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "/" && document.activeElement !== $("#q")) { e.preventDefault(); $("#q").focus(); switchTab("stars"); }
+  if (e.key === "Escape") { $("#q").value = ""; state.q = ""; renderStars(); }
+});
+
+renderStats(); buildChips(); renderStars(); renderRepos(); renderAudit();
+</script>
+</body>
+</html>
