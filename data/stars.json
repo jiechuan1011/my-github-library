@@ -1,25 +1,50 @@
 [
   {
+    "full_name": "moonlight-stream/moonlight-android",
+    "name": "moonlight-android",
+    "owner": "moonlight-stream",
+    "description": "GameStream client for Android",
+    "language": "C",
+    "stars": 7579,
+    "forks": 1827,
+    "topics": [
+      "android-app",
+      "android-tv-apps",
+      "gamestream",
+      "moonlight",
+      "nvidia"
+    ],
+    "pushed_at": "2026-10-17T13:51:27Z",
+    "created_at": "2013-09-21T05:00:00Z",
+    "html_url": "https://github.com/moonlight-stream/moonlight-android",
+    "homepage": "",
+    "archived": false,
+    "is_fork": false,
+    "license": "GPL-3.0",
+    "size_kb": 145305,
+    "open_issues": 425
+  },
+  {
     "full_name": "T-Auto/dsh-ops",
     "name": "dsh-ops",
     "owner": "T-Auto",
     "description": "A toolkit for low-level operations in DSH, designed to reduce token usage and task execution time / DSH 底层操作工具插件，旨在减少 Token 消耗与任务耗时",
     "language": "JavaScript",
-    "stars": 5971,
+    "stars": 5977,
     "forks": 214,
     "topics": [
       "dsh",
       "dsh-plugin",
       "dsh-plugins"
     ],
-    "pushed_at": "2026-11-21T17:57:52Z",
+    "pushed_at": "2026-11-22T09:43:54Z",
     "created_at": "2026-10-08T07:09:25Z",
     "html_url": "https://github.com/T-Auto/dsh-ops",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 9357,
+    "size_kb": 9377,
     "open_issues": 48
   },
   {
@@ -28,7 +53,7 @@
     "owner": "voyager-crew",
     "description": "Enhancement suite for Gemini, AI Studio, Claude, ChatGPT & DeepSeek — plus a prompt manager for any website, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强套件；其中的提示词管理器可用于任意网站，如 DeepSeek Harness。",
     "language": "TypeScript",
-    "stars": 20697,
+    "stars": 20703,
     "forks": 698,
     "topics": [
       "ai-studio",
@@ -45,14 +70,14 @@
       "gemini",
       "safari-extension"
     ],
-    "pushed_at": "2026-11-21T00:22:07Z",
+    "pushed_at": "2026-11-23T00:21:27Z",
     "created_at": "2025-10-04T23:42:35Z",
     "html_url": "https://github.com/voyager-crew/voyager",
     "homepage": "https://voyager.nagi.fun/en",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 86288,
+    "size_kb": 86291,
     "open_issues": 0
   },
   {
@@ -61,8 +86,8 @@
     "owner": "moeru-ai",
     "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
     "language": "TypeScript",
-    "stars": 51634,
-    "forks": 5197,
+    "stars": 51649,
+    "forks": 5195,
     "topics": [
       "ai-companion",
       "ai-vtuber",
@@ -76,15 +101,15 @@
       "vrm",
       "vtuber"
     ],
-    "pushed_at": "2026-11-21T20:23:28Z",
+    "pushed_at": "2026-11-23T01:14:45Z",
     "created_at": "2024-12-01T16:33:36Z",
     "html_url": "https://github.com/moeru-ai/airi",
     "homepage": "https://airi.moeru.ai/docs/",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 648895,
-    "open_issues": 299
+    "size_kb": 648940,
+    "open_issues": 298
   },
   {
     "full_name": "Portkey-AI/gateway",
@@ -92,8 +117,8 @@
     "owner": "Portkey-AI",
     "description": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.",
     "language": "TypeScript",
-    "stars": 13425,
-    "forks": 1393,
+    "stars": 13430,
+    "forks": 1392,
     "topics": [
       "ai-gateway",
       "gateway",
@@ -127,21 +152,21 @@
     "owner": "lbjlaq",
     "description": "Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigravity Tools. Built with Tauri v2 + React (Rust).专业的 Antigravity 账号管理与切换工具。为 Antigravity 提供一键无缝账号切换功能。",
     "language": "Rust",
-    "stars": 33557,
-    "forks": 3572,
+    "stars": 33668,
+    "forks": 3579,
     "topics": [
       "account-manager",
       "antigravity"
     ],
-    "pushed_at": "2026-11-21T16:37:18Z",
+    "pushed_at": "2026-11-22T11:21:02Z",
     "created_at": "2025-11-26T10:47:13Z",
     "html_url": "https://github.com/lbjlaq/Antigravity-Manager",
     "homepage": "https://lbjlaq.github.io/Antigravity-Manager/",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 101877,
-    "open_issues": 1686
+    "size_kb": 101879,
+    "open_issues": 1687
   },
   {
     "full_name": "Ebony-Vinyl/dsh-our-free-model",
@@ -149,8 +174,8 @@
     "owner": "Ebony-Vinyl",
     "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
     "language": "JavaScript",
-    "stars": 83100,
-    "forks": 2338,
+    "stars": 83973,
+    "forks": 2353,
     "topics": [
       "ai-agents",
       "deepseek",
@@ -163,15 +188,15 @@
       "model-provider",
       "openai-compatible"
     ],
-    "pushed_at": "2026-11-21T10:49:38Z",
+    "pushed_at": "2026-11-22T16:01:28Z",
     "created_at": "2026-09-24T16:17:19Z",
     "html_url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 226065,
-    "open_issues": 225
+    "size_kb": 327016,
+    "open_issues": 227
   },
   {
     "full_name": "DUNHKpcc/Claude-Guardian",
@@ -179,7 +204,7 @@
     "owner": "DUNHKpcc",
     "description": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude防封实战 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups. ",
     "language": "Python",
-    "stars": 2212,
+    "stars": 2222,
     "forks": 260,
     "topics": [
       "agent-skills",
@@ -204,8 +229,8 @@
     "owner": "ccch1mneyyy",
     "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
     "language": "Dart",
-    "stars": 29601,
-    "forks": 1415,
+    "stars": 30188,
+    "forks": 1446,
     "topics": [
       "ai-agent",
       "android",
@@ -219,15 +244,15 @@
       "flutter",
       "llm"
     ],
-    "pushed_at": "2026-11-22T00:10:13Z",
+    "pushed_at": "2026-11-23T00:52:25Z",
     "created_at": "2026-10-25T08:09:52Z",
     "html_url": "https://github.com/ccch1mneyyy/dsh-Go",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "AGPL-3.0",
-    "size_kb": 732978,
-    "open_issues": 835
+    "size_kb": 738390,
+    "open_issues": 879
   },
   {
     "full_name": "Stapxs/Stapxs-QQ-Lite-2.0",
@@ -252,7 +277,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 23886,
-    "open_issues": 16
+    "open_issues": 17
   },
   {
     "full_name": "Droid-Deck/DroidDeck",
@@ -260,18 +285,18 @@
     "owner": "Droid-Deck",
     "description": "DroidDeck brings the SteamOS experience to Android",
     "language": "Kotlin",
-    "stars": 21222,
-    "forks": 1091,
+    "stars": 21377,
+    "forks": 1097,
     "topics": [],
-    "pushed_at": "2026-11-22T00:39:24Z",
+    "pushed_at": "2026-11-23T01:10:52Z",
     "created_at": "2026-09-24T15:14:13Z",
     "html_url": "https://github.com/Droid-Deck/DroidDeck",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 423262,
-    "open_issues": 685
+    "size_kb": 424701,
+    "open_issues": 693
   },
   {
     "full_name": "HKUDS/DeepTutor",
@@ -279,8 +304,8 @@
     "owner": "HKUDS",
     "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
     "language": "Python",
-    "stars": 61356,
-    "forks": 7408,
+    "stars": 61610,
+    "forks": 7429,
     "topics": [
       "ai-agents",
       "ai-tutor",
@@ -300,7 +325,7 @@
     "is_fork": false,
     "license": "Apache-2.0",
     "size_kb": 262748,
-    "open_issues": 403
+    "open_issues": 425
   },
   {
     "full_name": "DSPBluePrints/FactoryBluePrints",
@@ -308,7 +333,7 @@
     "owner": "DSPBluePrints",
     "description": "游戏戴森球计划的**工厂**蓝图仓库",
     "language": "Text",
-    "stars": 2497,
+    "stars": 2496,
     "forks": 383,
     "topics": [],
     "pushed_at": "2026-09-25T02:31:16Z",
@@ -346,8 +371,8 @@
     "owner": "Open-LLM-VTuber",
     "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D avatar running locally across platforms",
     "language": "Python",
-    "stars": 14792,
-    "forks": 1780,
+    "stars": 14825,
+    "forks": 1786,
     "topics": [
       "ai",
       "ai-companion",
@@ -376,8 +401,8 @@
     "owner": "eternity4719",
     "description": "高性价比人生指南: 长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
     "language": "HTML",
-    "stars": 76944,
-    "forks": 6825,
+    "stars": 77091,
+    "forks": 6831,
     "topics": [],
     "pushed_at": "2026-11-16T09:46:16Z",
     "created_at": "2026-09-07T01:53:36Z",
@@ -396,7 +421,7 @@
     "description": "番茄作家 MD/TXT 批量上传，定时排期、多卷、后台静默运行。存稿一次排完几个月的更新，不用每天手动发。每章发完都上平台核对有没有真的发出去，漏了哪几章直接列出来。",
     "language": "Python",
     "stars": 41,
-    "forks": 12,
+    "forks": 13,
     "topics": [
       "automation",
       "batch-upload",
@@ -427,8 +452,8 @@
     "owner": "Tianyu199509",
     "description": "A free, open-source Windows desktop organizer with native-feeling WinUI 3 widgets.",
     "language": "C#",
-    "stars": 9451,
-    "forks": 506,
+    "stars": 9501,
+    "forks": 508,
     "topics": [
       "desktop-cleanup",
       "desktop-organizer",
@@ -450,15 +475,15 @@
       "winui-3",
       "winui3"
     ],
-    "pushed_at": "2026-11-21T09:14:33Z",
+    "pushed_at": "2026-11-22T16:52:02Z",
     "created_at": "2026-06-11T10:55:22Z",
     "html_url": "https://github.com/Tianyu199509/DeskBox",
     "homepage": "https://deskbox.fun",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 151482,
-    "open_issues": 126
+    "size_kb": 155957,
+    "open_issues": 129
   },
   {
     "full_name": "casosorg/casos",
@@ -501,22 +526,22 @@
     "owner": "microsoft",
     "description": "🪄 Flint is a visualization language that lets AI agents reliably create expressive, good-looking charts from simple, human-editable chart specs.",
     "language": "TypeScript",
-    "stars": 4594,
-    "forks": 270,
+    "stars": 4599,
+    "forks": 269,
     "topics": [
       "ai-agents",
       "charting-library",
       "data-visualization",
       "mcp-server"
     ],
-    "pushed_at": "2026-11-17T21:34:16Z",
+    "pushed_at": "2026-11-22T00:56:22Z",
     "created_at": "2026-05-13T00:00:28Z",
     "html_url": "https://github.com/microsoft/flint-chart",
     "homepage": "https://microsoft.github.io/flint-chart/",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 65707,
+    "size_kb": 67938,
     "open_issues": 42
   },
   {
@@ -525,7 +550,7 @@
     "owner": "Jasonzhu1207",
     "description": "Local Android file converter built with Kotlin and Jetpack Compose. Convert files on device, with no ads, accounts, or upload-based fallback.",
     "language": "Kotlin",
-    "stars": 1969,
+    "stars": 1977,
     "forks": 63,
     "topics": [
       "android-app",
@@ -556,7 +581,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 253112,
-    "open_issues": 3
+    "open_issues": 2
   },
   {
     "full_name": "chuspeeism/dashi-ppt-skill",
@@ -564,7 +589,7 @@
     "owner": "chuspeeism",
     "description": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
     "language": "JavaScript",
-    "stars": 10917,
+    "stars": 10952,
     "forks": 928,
     "topics": [
       "agent-skill",
@@ -598,7 +623,7 @@
     "owner": "helloianneo",
     "description": "中文小黑怪诞正文配图生成 Skill | 16:9 白底手绘 | 少量红橙蓝批注 | Codex Skill",
     "language": "",
-    "stars": 13316,
+    "stars": 13321,
     "forks": 1516,
     "topics": [
       "ai-agent",
@@ -625,8 +650,8 @@
     "owner": "virgiliojr94",
     "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
     "language": "Python",
-    "stars": 38646,
-    "forks": 4116,
+    "stars": 38764,
+    "forks": 4130,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -642,15 +667,15 @@
       "self-study",
       "study-tools"
     ],
-    "pushed_at": "2026-11-19T21:48:14Z",
+    "pushed_at": "2026-11-22T21:22:39Z",
     "created_at": "2026-05-01T02:09:39Z",
     "html_url": "https://github.com/virgiliojr94/book-to-skill",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 2978,
-    "open_issues": 24
+    "size_kb": 2881,
+    "open_issues": 27
   },
   {
     "full_name": "deepseek-ai/deepseek-harness",
@@ -658,22 +683,22 @@
     "owner": "deepseek-ai",
     "description": "DeepSeek Harness: Everything is a Plugin.",
     "language": "TypeScript",
-    "stars": 285088,
-    "forks": 35440,
+    "stars": 285566,
+    "forks": 35525,
     "topics": [
       "ai-agents",
       "cordis",
       "dsh",
       "dsh-plugin"
     ],
-    "pushed_at": "2026-11-18T12:48:10Z",
+    "pushed_at": "2026-11-22T11:00:05Z",
     "created_at": "2026-08-13T11:56:32Z",
     "html_url": "https://github.com/deepseek-ai/deepseek-harness",
     "homepage": "https://deepseek.com/harness",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 414201,
+    "size_kb": 424393,
     "open_issues": 0
   },
   {
@@ -682,7 +707,7 @@
     "owner": "FriesI23",
     "description": "Open-source Flutter habit tracker with smart scoring, WebDAV sync, local-first storage, privacy-focused design, and support for Android, iOS, Windows, macOS, and Linux.",
     "language": "Dart",
-    "stars": 1710,
+    "stars": 1711,
     "forks": 103,
     "topics": [
       "android",
@@ -706,14 +731,14 @@
       "webdav",
       "windows"
     ],
-    "pushed_at": "2026-11-21T10:04:50Z",
+    "pushed_at": "2026-11-23T00:38:51Z",
     "created_at": "2023-04-26T00:03:15Z",
     "html_url": "https://github.com/FriesI23/mhabit",
     "homepage": "https://github.com/FriesI23/mhabit",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 153165,
+    "size_kb": 153424,
     "open_issues": 96
   },
   {
@@ -722,7 +747,7 @@
     "owner": "JOYCEQL",
     "description": "free online AI resume editor，the only official website is  https://magicv.art",
     "language": "TypeScript",
-    "stars": 11544,
+    "stars": 11549,
     "forks": 1200,
     "topics": [
       "ai",
@@ -751,8 +776,8 @@
     "owner": "liketrek",
     "description": "The most complete open-source travel planner: real-time collaboration, bookings, budgets, packing lists, journals, offline PWA, SSO and an AI-ready MCP server, with planet-wide place search and routing built in.",
     "language": "TypeScript",
-    "stars": 15862,
-    "forks": 1359,
+    "stars": 15880,
+    "forks": 1362,
     "topics": [
       "budget-tracker",
       "collaborative",
@@ -774,14 +799,14 @@
       "tripit",
       "wanderlog"
     ],
-    "pushed_at": "2026-11-21T14:56:50Z",
+    "pushed_at": "2026-11-22T22:09:23Z",
     "created_at": "2026-03-19T11:51:54Z",
     "html_url": "https://github.com/liketrek/TREK",
     "homepage": "https://demo.liketrek.com",
     "archived": false,
     "is_fork": false,
     "license": "AGPL-3.0",
-    "size_kb": 681417,
+    "size_kb": 679292,
     "open_issues": 22
   },
   {
@@ -790,8 +815,8 @@
     "owner": "OpenMontageInc",
     "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
     "language": "Python",
-    "stars": 82128,
-    "forks": 11180,
+    "stars": 82419,
+    "forks": 11234,
     "topics": [
       "agent",
       "agentic-ai",
@@ -821,7 +846,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 78331,
-    "open_issues": 357
+    "open_issues": 359
   },
   {
     "full_name": "crosspoint-reader/crosspoint-reader",
@@ -829,8 +854,8 @@
     "owner": "crosspoint-reader",
     "description": "Open-source e-reader firmware",
     "language": "C++",
-    "stars": 8917,
-    "forks": 2402,
+    "stars": 8932,
+    "forks": 2414,
     "topics": [
       "e-reader",
       "eink",
@@ -840,15 +865,15 @@
       "esp32",
       "firmware"
     ],
-    "pushed_at": "2026-11-21T21:59:03Z",
+    "pushed_at": "2026-11-23T01:05:00Z",
     "created_at": "2025-12-03T11:01:12Z",
     "html_url": "https://github.com/crosspoint-reader/crosspoint-reader",
     "homepage": "https://crosspointreader.com",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 110509,
-    "open_issues": 640
+    "size_kb": 110569,
+    "open_issues": 637
   },
   {
     "full_name": "SillyTavern/SillyTavern",
@@ -856,22 +881,22 @@
     "owner": "SillyTavern",
     "description": "LLM Frontend for Power Users.",
     "language": "JavaScript",
-    "stars": 35928,
-    "forks": 6745,
+    "stars": 35956,
+    "forks": 6754,
     "topics": [
       "ai",
       "chat",
       "llm"
     ],
-    "pushed_at": "2026-11-21T23:17:12Z",
+    "pushed_at": "2026-11-22T10:00:24Z",
     "created_at": "2023-02-09T10:19:24Z",
     "html_url": "https://github.com/SillyTavern/SillyTavern",
     "homepage": "https://sillytavern.app",
     "archived": false,
     "is_fork": false,
     "license": "AGPL-3.0",
-    "size_kb": 216725,
-    "open_issues": 535
+    "size_kb": 216451,
+    "open_issues": 540
   },
   {
     "full_name": "weave-os/router",
@@ -879,7 +904,7 @@
     "owner": "weave-os",
     "description": "Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change.",
     "language": "Go",
-    "stars": 5622,
+    "stars": 5621,
     "forks": 169,
     "topics": [
       "agentic-coding",
@@ -890,15 +915,15 @@
       "model-router",
       "openai-compatible"
     ],
-    "pushed_at": "2026-11-22T00:44:52Z",
+    "pushed_at": "2026-11-23T01:13:37Z",
     "created_at": "2026-04-27T17:56:27Z",
     "html_url": "https://github.com/weave-os/router",
     "homepage": "https://weaveos.com/products/router",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 46325,
-    "open_issues": 254
+    "size_kb": 46766,
+    "open_issues": 240
   },
   {
     "full_name": "lss233/kirara-ai",
@@ -906,7 +931,7 @@
     "owner": "lss233",
     "description": "🤖 可 DIY 的 多模态 AI 聊天机器人 | 🚀 快速接入 微信、 QQ、Telegram、等聊天平台 | 🦈支持DeepSeek、Grok、Claude、Ollama、Gemini、OpenAI | 工作流系统、网页搜索、AI画图、人设调教、虚拟女仆、语音对话 | ",
     "language": "Python",
-    "stars": 19299,
+    "stars": 19303,
     "forks": 1834,
     "topics": [
       "bard",
@@ -946,8 +971,8 @@
     "owner": "Hypostasis-Cat",
     "description": "CN Windows 多网卡聚合与网络加速工具。一键融合有线、Wi-Fi、热点等连接，实现多路径传输与智能流量调度。 EN Windows multi-NIC network accelerator. Combine Ethernet, Wi-Fi, hotspots and more for multi-path transmission and smart traffic routing.",
     "language": "Go",
-    "stars": 4131,
-    "forks": 159,
+    "stars": 4151,
+    "forks": 161,
     "topics": [
       "fluent",
       "go",
@@ -966,7 +991,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 97544,
-    "open_issues": 20
+    "open_issues": 21
   },
   {
     "full_name": "AlexanderZhou01/China-software-copyright",
@@ -993,23 +1018,23 @@
     "owner": "emdash-cms",
     "description": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress",
     "language": "TypeScript",
-    "stars": 14544,
-    "forks": 1406,
+    "stars": 14556,
+    "forks": 1414,
     "topics": [
       "astro",
       "cms",
       "emdash",
       "typescript"
     ],
-    "pushed_at": "2026-11-22T00:15:40Z",
+    "pushed_at": "2026-11-22T23:42:42Z",
     "created_at": "2026-04-01T08:45:02Z",
     "html_url": "https://github.com/emdash-cms/emdash",
     "homepage": "https://emdashcms.com",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 428554,
-    "open_issues": 270
+    "size_kb": 431051,
+    "open_issues": 273
   },
   {
     "full_name": "refactoringhq/tolaria",
@@ -1017,17 +1042,17 @@
     "owner": "refactoringhq",
     "description": "Desktop app to manage markdown knowledge bases",
     "language": "TypeScript",
-    "stars": 20597,
-    "forks": 1417,
+    "stars": 20604,
+    "forks": 1418,
     "topics": [],
-    "pushed_at": "2026-11-21T23:56:53Z",
+    "pushed_at": "2026-11-22T14:11:06Z",
     "created_at": "2026-02-14T19:43:14Z",
     "html_url": "https://github.com/refactoringhq/tolaria",
     "homepage": "https://tolaria.md",
     "archived": false,
     "is_fork": false,
     "license": "AGPL-3.0",
-    "size_kb": 116194,
+    "size_kb": 113744,
     "open_issues": 48
   },
   {
@@ -1036,8 +1061,8 @@
     "owner": "smol-machines",
     "description": "An embeddable, portable, branchable virtual machine to safely run Agents locally.",
     "language": "Rust",
-    "stars": 7156,
-    "forks": 377,
+    "stars": 7178,
+    "forks": 378,
     "topics": [
       "agent-sandbox",
       "ai-agents",
@@ -1052,14 +1077,14 @@
       "virtual-machine",
       "virtualization"
     ],
-    "pushed_at": "2026-11-21T22:42:07Z",
+    "pushed_at": "2026-11-22T23:35:11Z",
     "created_at": "2025-12-18T23:25:15Z",
     "html_url": "https://github.com/smol-machines/smolvm",
     "homepage": "https://smolmachines.com",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 73231,
+    "size_kb": 73347,
     "open_issues": 100
   },
   {
@@ -1068,8 +1093,8 @@
     "owner": "Imbad0202",
     "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
     "language": "Python",
-    "stars": 57988,
-    "forks": 4424,
+    "stars": 58110,
+    "forks": 4429,
     "topics": [
       "academic-pipeline",
       "academic-writing",
@@ -1080,15 +1105,15 @@
       "peer-review",
       "prompt-engineering"
     ],
-    "pushed_at": "2026-11-21T07:48:34Z",
+    "pushed_at": "2026-11-22T13:39:50Z",
     "created_at": "2026-02-26T06:31:01Z",
     "html_url": "https://github.com/Imbad0202/academic-research-skills",
     "homepage": "https://buymeacoffee.com/crucify020v",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 25682,
-    "open_issues": 56
+    "size_kb": 25196,
+    "open_issues": 63
   },
   {
     "full_name": "hardikpandya/stop-slop",
@@ -1096,8 +1121,8 @@
     "owner": "hardikpandya",
     "description": "A skill file for removing AI tells from prose",
     "language": "",
-    "stars": 19111,
-    "forks": 1410,
+    "stars": 19125,
+    "forks": 1412,
     "topics": [],
     "pushed_at": "2026-03-17T18:50:39Z",
     "created_at": "2026-01-11T12:00:59Z",
@@ -1115,8 +1140,8 @@
     "owner": "earthtojake",
     "description": "Design physical products with AI",
     "language": "Python",
-    "stars": 27074,
-    "forks": 2579,
+    "stars": 27165,
+    "forks": 2586,
     "topics": [
       "agents",
       "ai-agents",
@@ -1128,15 +1153,15 @@
       "stp",
       "text-to-cad"
     ],
-    "pushed_at": "2026-11-22T00:43:04Z",
+    "pushed_at": "2026-11-23T01:12:46Z",
     "created_at": "2026-04-22T01:09:45Z",
     "html_url": "https://github.com/earthtojake/text-to-cad",
     "homepage": "https://www.texttocad.dev",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 465894,
-    "open_issues": 38
+    "size_kb": 463772,
+    "open_issues": 46
   },
   {
     "full_name": "THU-MAIC/OpenMAIC",
@@ -1144,18 +1169,18 @@
     "owner": "THU-MAIC",
     "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
     "language": "TypeScript",
-    "stars": 44087,
-    "forks": 6786,
+    "stars": 44166,
+    "forks": 6797,
     "topics": [],
-    "pushed_at": "2026-11-22T00:07:58Z",
+    "pushed_at": "2026-11-22T21:37:18Z",
     "created_at": "2026-03-11T10:13:16Z",
     "html_url": "https://github.com/THU-MAIC/OpenMAIC",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 265666,
-    "open_issues": 74
+    "size_kb": 265718,
+    "open_issues": 75
   },
   {
     "full_name": "echo-loop/Echo-Loop",
@@ -1163,8 +1188,8 @@
     "owner": "echo-loop",
     "description": "Echo Loop 是最专业的英语精听 App，通过精听、跟读、盲听、复述和间隔复习，自动驱动你把每一段音频练懂、练熟、练到会说。",
     "language": "Dart",
-    "stars": 4873,
-    "forks": 509,
+    "stars": 4921,
+    "forks": 513,
     "topics": [
       "ai",
       "education",
@@ -1191,7 +1216,7 @@
     "owner": "dorukkumkumoglu",
     "description": "Optocam Zero is a Raspberry Pi Zero based compact digital camera made using off the shelf components.",
     "language": "Python",
-    "stars": 920,
+    "stars": 922,
     "forks": 38,
     "topics": [
       "camera",
@@ -1218,8 +1243,8 @@
     "owner": "antirez",
     "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
     "language": "C",
-    "stars": 24419,
-    "forks": 2386,
+    "stars": 24424,
+    "forks": 2387,
     "topics": [],
     "pushed_at": "2026-11-08T09:57:40Z",
     "created_at": "2026-05-06T17:17:05Z",
@@ -1229,7 +1254,7 @@
     "is_fork": false,
     "license": "MIT",
     "size_kb": 59535,
-    "open_issues": 882
+    "open_issues": 883
   },
   {
     "full_name": "unchihugo/FluentFlyout",
@@ -1237,7 +1262,7 @@
     "owner": "unchihugo",
     "description": "The modern Flyout app for Windows 11, built with Fluent 2 Design principles. Media Flyouts, Taskbar Widgets and more.",
     "language": "C#",
-    "stars": 4949,
+    "stars": 4956,
     "forks": 258,
     "topics": [
       "acrylic",
@@ -1255,15 +1280,15 @@
       "windows",
       "windows-11"
     ],
-    "pushed_at": "2026-11-22T00:06:43Z",
+    "pushed_at": "2026-11-22T23:37:10Z",
     "created_at": "2024-10-13T15:14:42Z",
     "html_url": "https://github.com/unchihugo/FluentFlyout",
     "homepage": "https://fluentflyout.com",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 25121,
-    "open_issues": 373
+    "size_kb": 25168,
+    "open_issues": 374
   },
   {
     "full_name": "millionco/react-doctor",
@@ -1271,8 +1296,8 @@
     "owner": "millionco",
     "description": "Your agent writes bad React. This catches it",
     "language": "TypeScript",
-    "stars": 15176,
-    "forks": 500,
+    "stars": 15179,
+    "forks": 501,
     "topics": [
       "agents",
       "code-review",
@@ -1280,15 +1305,15 @@
       "react",
       "skill"
     ],
-    "pushed_at": "2026-11-21T23:39:24Z",
+    "pushed_at": "2026-11-23T00:54:55Z",
     "created_at": "2026-02-13T09:02:13Z",
     "html_url": "https://github.com/millionco/react-doctor",
     "homepage": "https://react.doctor",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 132197,
-    "open_issues": 659
+    "size_kb": 132517,
+    "open_issues": 675
   },
   {
     "full_name": "bleachbit/bleachbit",
@@ -1296,8 +1321,8 @@
     "owner": "bleachbit",
     "description": "BleachBit system cleaner for Windows and Linux",
     "language": "Python",
-    "stars": 7554,
-    "forks": 490,
+    "stars": 7571,
+    "forks": 491,
     "topics": [
       "antiforensics",
       "bleachbit",
@@ -1336,8 +1361,8 @@
     "owner": "liaohch3",
     "description": "Intercept and inspect Coding Agent API traffic from Claude Code, Codex CLI, Gemini CLI, Cursor CLI, OpenCode, Kimi/Kimi Code, Pi, and Hermes in a local trace viewer.",
     "language": "Python",
-    "stars": 3357,
-    "forks": 293,
+    "stars": 3362,
+    "forks": 294,
     "topics": [
       "agent-debugging",
       "agent-observability",
@@ -1360,14 +1385,14 @@
       "trace",
       "trace-viewer"
     ],
-    "pushed_at": "2026-11-21T23:44:16Z",
+    "pushed_at": "2026-11-23T00:07:50Z",
     "created_at": "2026-02-15T12:51:26Z",
     "html_url": "https://github.com/liaohch3/claude-tap",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 126840,
+    "size_kb": 126923,
     "open_issues": 44
   },
   {
@@ -1377,7 +1402,7 @@
     "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
     "language": "Python",
     "stars": 6851,
-    "forks": 379,
+    "forks": 380,
     "topics": [
       "localllm"
     ],
@@ -1397,8 +1422,8 @@
     "owner": "tw93",
     "description": "👩‍🚒 Good content deserves good paper. Layout rules and templates that let AI agents export PDF, PNG and editable PowerPoint.",
     "language": "HTML",
-    "stars": 12601,
-    "forks": 586,
+    "stars": 12611,
+    "forks": 587,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -1425,8 +1450,8 @@
     "owner": "anthropics",
     "description": "Public repository for Agent Skills",
     "language": "Python",
-    "stars": 198486,
-    "forks": 23229,
+    "stars": 199012,
+    "forks": 23289,
     "topics": [
       "agent-skills"
     ],
@@ -1438,7 +1463,7 @@
     "is_fork": false,
     "license": "",
     "size_kb": 5542,
-    "open_issues": 1564
+    "open_issues": 1569
   },
   {
     "full_name": "steipete/CodexBar",
@@ -1446,8 +1471,8 @@
     "owner": "steipete",
     "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
     "language": "Swift",
-    "stars": 23260,
-    "forks": 2243,
+    "stars": 23286,
+    "forks": 2245,
     "topics": [
       "ai",
       "claude-code",
@@ -1462,7 +1487,7 @@
     "is_fork": false,
     "license": "MIT",
     "size_kb": 372852,
-    "open_issues": 27
+    "open_issues": 40
   },
   {
     "full_name": "fancyboi999/ai-engineering-from-scratch-zh",
@@ -1470,8 +1495,8 @@
     "owner": "fancyboi999",
     "description": "Agent工程师最全学习路径 · 从零精通 AI 工程 · 20 阶段 542 课 · 中文全量翻译 + 配套站点 + 动画讲解视频 · 如何成为 AI Agent 工程师的修成指南",
     "language": "Python",
-    "stars": 1354,
-    "forks": 197,
+    "stars": 1359,
+    "forks": 198,
     "topics": [
       "agents",
       "ai",
@@ -1494,15 +1519,15 @@
       "transformers",
       "tutorial"
     ],
-    "pushed_at": "2026-11-21T01:08:23Z",
+    "pushed_at": "2026-11-23T01:14:38Z",
     "created_at": "2026-05-26T12:45:07Z",
     "html_url": "https://github.com/fancyboi999/ai-engineering-from-scratch-zh",
     "homepage": "https://aieng-zh.cn",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 121333,
-    "open_issues": 0
+    "size_kb": 122446,
+    "open_issues": 1
   },
   {
     "full_name": "rohitg00/ai-engineering-from-scratch",
@@ -1510,8 +1535,8 @@
     "owner": "rohitg00",
     "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
     "language": "Python",
-    "stars": 79768,
-    "forks": 14254,
+    "stars": 79856,
+    "forks": 14277,
     "topics": [
       "agents",
       "ai",
@@ -1542,7 +1567,7 @@
     "is_fork": false,
     "license": "MIT",
     "size_kb": 196930,
-    "open_issues": 68
+    "open_issues": 69
   },
   {
     "full_name": "nexu-io/open-design",
@@ -1550,8 +1575,8 @@
     "owner": "nexu-io",
     "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
     "language": "TypeScript",
-    "stars": 108843,
-    "forks": 12320,
+    "stars": 108987,
+    "forks": 12332,
     "topics": [
       "agent-skills",
       "ai-design",
@@ -1574,15 +1599,15 @@
       "ui-generator",
       "vibe-coding"
     ],
-    "pushed_at": "2026-11-21T18:04:14Z",
+    "pushed_at": "2026-11-23T01:10:05Z",
     "created_at": "2026-04-28T04:25:20Z",
     "html_url": "https://github.com/nexu-io/open-design",
     "homepage": "https://open-design.ai",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 3661119,
-    "open_issues": 1442
+    "size_kb": 3661085,
+    "open_issues": 1441
   },
   {
     "full_name": "Geniusay/ChopperBot",
@@ -1590,7 +1615,7 @@
     "owner": "Geniusay",
     "description": "虎牙，斗鱼，抖音，BiliBili，TikTok，Twitch🔥热门🔥智能直播视频剪辑发布AI机器人，自动化🤖，全智能化⚙（智能生成切片，标题，封面，简介），可视化👓，平台热门监控🌡，丰富插件随意扩展🕹，快速部署⚡，视频账号打造自动发布🌟，支持DIY🎮",
     "language": "Java",
-    "stars": 2859,
+    "stars": 2862,
     "forks": 478,
     "topics": [],
     "pushed_at": "2025-08-04T15:43:09Z",
@@ -1609,8 +1634,8 @@
     "owner": "agentscope-ai",
     "description": "Build and run agents you can see, understand and trust.",
     "language": "Python",
-    "stars": 36439,
-    "forks": 3899,
+    "stars": 36485,
+    "forks": 3904,
     "topics": [
       "agent",
       "chatbot",
@@ -1633,7 +1658,7 @@
     "is_fork": false,
     "license": "Apache-2.0",
     "size_kb": 68481,
-    "open_issues": 843
+    "open_issues": 857
   },
   {
     "full_name": "mattpocock/skills",
@@ -1641,8 +1666,8 @@
     "owner": "mattpocock",
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
     "language": "Shell",
-    "stars": 329780,
-    "forks": 27712,
+    "stars": 330507,
+    "forks": 27776,
     "topics": [],
     "pushed_at": "2026-11-19T13:35:13Z",
     "created_at": "2026-02-03T11:15:53Z",
@@ -1652,7 +1677,7 @@
     "is_fork": false,
     "license": "MIT",
     "size_kb": 2430,
-    "open_issues": 262
+    "open_issues": 265
   },
   {
     "full_name": "JuliusBrussee/caveman",
@@ -1660,8 +1685,8 @@
     "owner": "JuliusBrussee",
     "description": "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.",
     "language": "Go",
-    "stars": 121980,
-    "forks": 7115,
+    "stars": 122183,
+    "forks": 7127,
     "topics": [
       "ai",
       "anthropic",
@@ -1674,15 +1699,15 @@
       "skill",
       "tokens"
     ],
-    "pushed_at": "2026-11-20T07:32:16Z",
+    "pushed_at": "2026-11-22T06:55:27Z",
     "created_at": "2026-04-04T10:03:00Z",
     "html_url": "https://github.com/JuliusBrussee/caveman",
     "homepage": "https://docs.caveman.so/caveman",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 22007,
-    "open_issues": 109
+    "size_kb": 22252,
+    "open_issues": 112
   },
   {
     "full_name": "alchaincyf/huashu-design",
@@ -1690,8 +1715,8 @@
     "owner": "alchaincyf",
     "description": "Huashu Design 3.4 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / App Store 宣传图 / 小红书图文 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 92 种带样张的风格库 · 该是图的地方放真图 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
     "language": "HTML",
-    "stars": 30244,
-    "forks": 3222,
+    "stars": 30423,
+    "forks": 3237,
     "topics": [
       "agent-skills",
       "ai-design",
@@ -1714,15 +1739,15 @@
       "slides",
       "ui-design"
     ],
-    "pushed_at": "2026-11-21T09:57:59Z",
+    "pushed_at": "2026-11-22T06:56:02Z",
     "created_at": "2026-04-19T14:42:06Z",
     "html_url": "https://github.com/alchaincyf/huashu-design",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 233031,
-    "open_issues": 1
+    "size_kb": 234048,
+    "open_issues": 2
   },
   {
     "full_name": "Thysrael/Horizon",
@@ -1730,8 +1755,8 @@
     "owner": "Thysrael",
     "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
     "language": "Python",
-    "stars": 14888,
-    "forks": 2159,
+    "stars": 14927,
+    "forks": 2171,
     "topics": [
       "aggregator",
       "feishu-bot",
@@ -1742,14 +1767,14 @@
       "python",
       "webhook"
     ],
-    "pushed_at": "2026-11-22T00:01:59Z",
+    "pushed_at": "2026-11-23T00:02:36Z",
     "created_at": "2026-02-20T08:22:45Z",
     "html_url": "https://github.com/Thysrael/Horizon",
     "homepage": "https://www.horizon1123.top",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 17003,
+    "size_kb": 17068,
     "open_issues": 6
   },
   {
@@ -1758,8 +1783,8 @@
     "owner": "nezhahq",
     "description": ":trollface: Self-hosted, lightweight server and website monitoring and O&M tool",
     "language": "Go",
-    "stars": 10424,
-    "forks": 1607,
+    "stars": 10426,
+    "forks": 1606,
     "topics": [
       "monitoring",
       "monitoring-tool",
@@ -1773,7 +1798,7 @@
     "is_fork": false,
     "license": "WTFPL",
     "size_kb": 14603,
-    "open_issues": 59
+    "open_issues": 60
   },
   {
     "full_name": "luongnv89/claude-howto",
@@ -1781,8 +1806,8 @@
     "owner": "luongnv89",
     "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
     "language": "Python",
-    "stars": 47496,
-    "forks": 5759,
+    "stars": 47507,
+    "forks": 5761,
     "topics": [
       "claude-code",
       "guide",
@@ -1805,7 +1830,7 @@
     "description": "File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files.",
     "language": "Go",
     "stars": 35839,
-    "forks": 4203,
+    "forks": 4204,
     "topics": [
       "file-browser",
       "file-manager",
@@ -1831,7 +1856,7 @@
     "owner": "dedicatedcode",
     "description": "Reitti is a comprehensive personal location tracking and analysis application that helps you understand your movement patterns and significant places. The name \"Reitti\" comes from Finnish, meaning \"route\" or \"path\".",
     "language": "Java",
-    "stars": 2726,
+    "stars": 2725,
     "forks": 90,
     "topics": [
       "geolocation",
@@ -1848,7 +1873,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 98408,
-    "open_issues": 30
+    "open_issues": 32
   },
   {
     "full_name": "ellite/Wallos",
@@ -1856,7 +1881,7 @@
     "owner": "ellite",
     "description": "Wallos: Open-source, self-hostable personal subscription tracker. Visualize your recurring expenses, manage your budget, and save money.",
     "language": "PHP",
-    "stars": 8877,
+    "stars": 8883,
     "forks": 472,
     "topics": [
       "budgeting",
@@ -1882,7 +1907,7 @@
     "owner": "francescopace",
     "description": "Wi-Fi motion sensing platform for ESP32. C++ SDK, ESPHome, Native, and Matter frontends, browser tools, and a CLI for the full device lifecycle. GPLv3 and commercial licensing.",
     "language": "Python",
-    "stars": 9849,
+    "stars": 9853,
     "forks": 743,
     "topics": [
       "arduino-library",
@@ -1898,14 +1923,14 @@
       "wifi",
       "wifi-sensing"
     ],
-    "pushed_at": "2026-11-21T22:24:27Z",
+    "pushed_at": "2026-11-22T14:57:08Z",
     "created_at": "2025-10-26T10:41:51Z",
     "html_url": "https://github.com/francescopace/espectre",
     "homepage": "https://espectre.dev/",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 441334,
+    "size_kb": 441381,
     "open_issues": 3
   },
   {
@@ -1914,8 +1939,8 @@
     "owner": "Done-0",
     "description": "Legacy-Mess Detector – assess the “legacy-mess level” of your code and output a beautiful report",
     "language": "TypeScript",
-    "stars": 7300,
-    "forks": 330,
+    "stars": 7301,
+    "forks": 329,
     "topics": [],
     "pushed_at": "2026-09-07T14:34:11Z",
     "created_at": "2025-06-25T16:40:22Z",
@@ -1960,8 +1985,8 @@
     "owner": "eythaann",
     "description": "The Fully Customizable Desktop Environment for Windows 10/11.",
     "language": "Rust",
-    "stars": 18604,
-    "forks": 692,
+    "stars": 18616,
+    "forks": 694,
     "topics": [
       "app-launcher",
       "desktop-application",
@@ -1991,7 +2016,7 @@
     "is_fork": false,
     "license": "AGPL-3.0",
     "size_kb": 92700,
-    "open_issues": 68
+    "open_issues": 71
   },
   {
     "full_name": "github/docs",
@@ -1999,8 +2024,8 @@
     "owner": "github",
     "description": "The open-source repo for docs.github.com",
     "language": "TypeScript",
-    "stars": 21535,
-    "forks": 69706,
+    "stars": 21550,
+    "forks": 69727,
     "topics": [
       "docs",
       "works-with-codespaces"
@@ -2013,7 +2038,7 @@
     "is_fork": false,
     "license": "CC-BY-4.0",
     "size_kb": 2383825,
-    "open_issues": 52
+    "open_issues": 55
   },
   {
     "full_name": "karpathy/rendergit",
@@ -2040,8 +2065,8 @@
     "owner": "BloopAI",
     "description": "Get 10X more out of Claude Code, Codex or any coding agent",
     "language": "Rust",
-    "stars": 28774,
-    "forks": 3069,
+    "stars": 28786,
+    "forks": 3068,
     "topics": [
       "agent",
       "ai-agents",
@@ -2065,8 +2090,8 @@
     "owner": "farion1231",
     "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
     "language": "Rust",
-    "stars": 156199,
-    "forks": 10205,
+    "stars": 156402,
+    "forks": 10217,
     "topics": [
       "ai-tools",
       "claude-code",
@@ -2088,15 +2113,15 @@
       "tauri",
       "wsl-support"
     ],
-    "pushed_at": "2026-11-22T00:23:01Z",
+    "pushed_at": "2026-11-23T00:25:21Z",
     "created_at": "2025-08-04T14:16:16Z",
     "html_url": "https://github.com/farion1231/cc-switch",
     "homepage": "https://ccswitch.io",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 120168,
-    "open_issues": 797
+    "size_kb": 121011,
+    "open_issues": 753
   },
   {
     "full_name": "NightTeam/invoice-manager",
@@ -2124,7 +2149,7 @@
     "description": "stock，股票系统。使用python进行开发。",
     "language": "Python",
     "stars": 7895,
-    "forks": 2353,
+    "forks": 2352,
     "topics": [],
     "pushed_at": "2026-05-07T07:42:21Z",
     "created_at": "2017-07-17T03:24:03Z",
@@ -2142,8 +2167,8 @@
     "owner": "slopus",
     "description": "Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the subscriptions you already pay for.",
     "language": "Swift",
-    "stars": 24749,
-    "forks": 2133,
+    "stars": 24763,
+    "forks": 2137,
     "topics": [
       "agent-orchestration",
       "ai-agents",
@@ -2155,15 +2180,15 @@
       "grok",
       "hacktoberfest"
     ],
-    "pushed_at": "2026-11-20T07:23:12Z",
+    "pushed_at": "2026-11-22T19:55:57Z",
     "created_at": "2025-07-18T05:53:18Z",
     "html_url": "https://github.com/slopus/happy",
     "homepage": "https://happy.engineering/",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 543723,
-    "open_issues": 1136
+    "size_kb": 543033,
+    "open_issues": 1139
   },
   {
     "full_name": "simonoppowa/OpenNutriTracker",
@@ -2171,8 +2196,8 @@
     "owner": "simonoppowa",
     "description": "🍴 OpenNutriTracker is a free and open source calorie tracker with a focus on simplicity and privacy.",
     "language": "Dart",
-    "stars": 3010,
-    "forks": 422,
+    "stars": 3014,
+    "forks": 424,
     "topics": [
       "android",
       "barcode-scanner",
@@ -2194,15 +2219,15 @@
       "open-source",
       "privacy"
     ],
-    "pushed_at": "2026-11-21T00:33:24Z",
+    "pushed_at": "2026-11-22T22:19:29Z",
     "created_at": "2022-09-21T17:58:48Z",
     "html_url": "https://github.com/simonoppowa/OpenNutriTracker",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 81552,
-    "open_issues": 269
+    "size_kb": 81307,
+    "open_issues": 272
   },
   {
     "full_name": "antonmedv/gitmal",
@@ -2233,8 +2258,8 @@
     "owner": "Turbo1123",
     "description": "肉包 Roubao 2.0 for iPhone: open-source iOS AI agent with owner-authorized Micro-X UI control, custom models, resumable tasks and PDF reports. No Wi-Fi, jailbreak, computer or extra hardware at runtime (Mac + USB setup required). Legacy Android retained.",
     "language": "Swift",
-    "stars": 2421,
-    "forks": 258,
+    "stars": 2423,
+    "forks": 259,
     "topics": [
       "agent-harness",
       "ai-agents",
@@ -2273,8 +2298,8 @@
     "owner": "QuantumNous",
     "description": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
     "language": "Go",
-    "stars": 52321,
-    "forks": 12779,
+    "stars": 52348,
+    "forks": 12797,
     "topics": [
       "ai-gateway",
       "api-management",
@@ -2288,15 +2313,15 @@
       "rerank",
       "self-hosted"
     ],
-    "pushed_at": "2026-11-20T18:31:12Z",
+    "pushed_at": "2026-11-22T19:22:21Z",
     "created_at": "2023-11-10T19:33:36Z",
     "html_url": "https://github.com/QuantumNous/new-api",
     "homepage": "https://www.newapi.ai",
     "archived": false,
     "is_fork": false,
     "license": "AGPL-3.0",
-    "size_kb": 98492,
-    "open_issues": 1495
+    "size_kb": 98526,
+    "open_issues": 1492
   },
   {
     "full_name": "pjialin/py12306",
@@ -2304,8 +2329,8 @@
     "owner": "pjialin",
     "description": "🚂 12306 购票助手，支持集群，多账号，多任务购票以及 Web 页面管理 ",
     "language": "Python",
-    "stars": 14960,
-    "forks": 3564,
+    "stars": 14961,
+    "forks": 3565,
     "topics": [],
     "pushed_at": "2026-10-01T17:48:50Z",
     "created_at": "2019-01-07T18:04:11Z",
@@ -2323,18 +2348,18 @@
     "owner": "garrytan",
     "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
     "language": "TypeScript",
-    "stars": 33370,
-    "forks": 5004,
+    "stars": 33431,
+    "forks": 5016,
     "topics": [],
-    "pushed_at": "2026-11-22T00:46:18Z",
+    "pushed_at": "2026-11-23T01:10:50Z",
     "created_at": "2026-04-05T14:40:56Z",
     "html_url": "https://github.com/garrytan/gbrain",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 578164,
-    "open_issues": 417
+    "size_kb": 587735,
+    "open_issues": 370
   },
   {
     "full_name": "memstechtips/Winhance",
@@ -2342,7 +2367,7 @@
     "owner": "memstechtips",
     "description": "Application designed to optimize, customize and enhance your Windows experience.",
     "language": "C#",
-    "stars": 15030,
+    "stars": 15043,
     "forks": 702,
     "topics": [
       "autounattend",
@@ -2382,7 +2407,7 @@
     "owner": "Tosencen",
     "description": "一款白噪音应用送给你，祝您牛掰，有的是钱",
     "language": "Kotlin",
-    "stars": 1430,
+    "stars": 1432,
     "forks": 79,
     "topics": [
       "cozy",
@@ -2405,8 +2430,8 @@
     "owner": "newsnext",
     "description": "Elegant reading of real-time and hottest news",
     "language": "TypeScript",
-    "stars": 22538,
-    "forks": 6193,
+    "stars": 22546,
+    "forks": 6194,
     "topics": [
       "elegant",
       "news"
@@ -2427,8 +2452,8 @@
     "owner": "HuLaSpark",
     "description": "🍀 A cross-platform instant messaging desktop application with exceptional performance built on Rust + Vue3, compatible with Windows, macOS, Linux, Android, and iOS（一款基于Rust+Vue3极致性能的跨平台即时通讯桌面应用，兼容Windows、MacOS、Linux、Android、IOS）",
     "language": "Vue",
-    "stars": 7877,
-    "forks": 1076,
+    "stars": 7879,
+    "forks": 1078,
     "topics": [
       "chatbot",
       "cross-platform",
@@ -2460,7 +2485,7 @@
     "owner": "vikiboss",
     "description": "⏰ 60s API 免费接口。每天 60 秒看世界、奥运奖牌榜、小红书/B站/微博/抖音/知乎热搜、金价、油价、天气、翻译、壁纸、Epic 游戏、二维码、猫眼票房｜一系列 高质量、开源、可靠、全球 CDN 加速 的开放 API 集合，支持 Docker / Deno / Bun / Cloudflare Workers / Node.js 部署",
     "language": "TypeScript",
-    "stars": 5947,
+    "stars": 5950,
     "forks": 1140,
     "topics": [
       "60s",
@@ -2495,18 +2520,18 @@
     "owner": "garrytan",
     "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
     "language": "TypeScript",
-    "stars": 142284,
-    "forks": 20994,
+    "stars": 142383,
+    "forks": 21010,
     "topics": [],
-    "pushed_at": "2026-11-22T00:44:02Z",
+    "pushed_at": "2026-11-23T01:09:07Z",
     "created_at": "2026-03-11T21:22:45Z",
     "html_url": "https://github.com/garrytan/gstack",
     "homepage": "",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 279545,
-    "open_issues": 125
+    "size_kb": 280658,
+    "open_issues": 45
   },
   {
     "full_name": "andrewyng/context-hub",
@@ -2514,8 +2539,8 @@
     "owner": "andrewyng",
     "description": "",
     "language": "JavaScript",
-    "stars": 13993,
-    "forks": 1204,
+    "stars": 13994,
+    "forks": 1203,
     "topics": [],
     "pushed_at": "2026-05-31T18:41:45Z",
     "created_at": "2025-10-30T12:20:34Z",
@@ -2533,8 +2558,8 @@
     "owner": "ruvnet",
     "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "language": "Rust",
-    "stars": 104745,
-    "forks": 13578,
+    "stars": 104821,
+    "forks": 13583,
     "topics": [
       "claude",
       "claude-code",
@@ -2556,15 +2581,15 @@
       "wifi",
       "wifi-security"
     ],
-    "pushed_at": "2026-11-22T00:26:39Z",
+    "pushed_at": "2026-11-23T00:27:29Z",
     "created_at": "2025-06-07T04:32:30Z",
     "html_url": "https://github.com/ruvnet/RuView",
     "homepage": "https://cognitum.one",
     "archived": false,
     "is_fork": false,
     "license": "MIT",
-    "size_kb": 429464,
-    "open_issues": 620
+    "size_kb": 429486,
+    "open_issues": 627
   },
   {
     "full_name": "rtk-ai/rtk",
@@ -2572,8 +2597,8 @@
     "owner": "rtk-ai",
     "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
     "language": "Rust",
-    "stars": 87422,
-    "forks": 5612,
+    "stars": 87512,
+    "forks": 5619,
     "topics": [
       "agentic-coding",
       "ai-coding",
@@ -2589,15 +2614,15 @@
       "rust",
       "token-optimization"
     ],
-    "pushed_at": "2026-11-21T20:13:11Z",
+    "pushed_at": "2026-11-23T00:14:09Z",
     "created_at": "2026-01-22T16:54:16Z",
     "html_url": "https://github.com/rtk-ai/rtk",
     "homepage": "https://www.rtk-ai.app",
     "archived": false,
     "is_fork": false,
     "license": "Apache-2.0",
-    "size_kb": 19929,
-    "open_issues": 1692
+    "size_kb": 19969,
+    "open_issues": 1668
   },
   {
     "full_name": "abhigyanpatwari/GitNexus",
@@ -2605,18 +2630,18 @@
     "owner": "abhigyanpatwari",
     "description": "GitNexus: The Zero-Server Code Intelligence Engine ",
     "language": "TypeScript",
-    "stars": 48717,
+    "stars": 48736,
     "forks": 5273,
     "topics": [],
-    "pushed_at": "2026-11-21T23:49:21Z",
+    "pushed_at": "2026-11-23T01:12:20Z",
     "created_at": "2025-08-02T23:20:31Z",
     "html_url": "https://github.com/abhigyanpatwari/GitNexus",
     "homepage": "https://gitnexus.vercel.app",
     "archived": false,
     "is_fork": false,
     "license": "NOASSERTION",
-    "size_kb": 139738,
-    "open_issues": 287
+    "size_kb": 138095,
+    "open_issues": 283
   },
   {
     "full_name": "iOfficeAI/OfficeCLI",
@@ -2624,8 +2649,8 @@
     "owner": "iOfficeAI",
     "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
     "language": "C#",
-    "stars": 33507,
-    "forks": 2292,
+    "stars": 33527,
+    "forks": 2294,
     "topics": [
       "agent",
       "ai",
@@ -2658,8 +2683,8 @@
     "owner": "521xueweihan",
     "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "language": "Python",
-    "stars": 190404,
-    "forks": 13344,
+    "stars": 190587,
+    "forks": 13358,
     "topics": [
       "awesome",
       "github",
@@ -2674,7 +2699,7 @@
     "is_fork": false,
     "license": "",
     "size_kb": 12768,
-    "open_issues": 1422
+    "open_issues": 1437
   },
   {
     "full_name": "jay3-yy/BiliPai",
@@ -2682,18 +2707,18 @@
     "owner": "jay3-yy",
     "description": "原生、纯净、可扩展 —— 重新定义你的 B 站体验",
     "language": "Kotlin",
-    "stars": 5352,
-    "forks": 445,
+    "stars": 5365,
+    "forks": 444,
     "topics": [],
-    "pushed_at": "2026-11-21T19:40:26Z",
+    "pushed_at": "2026-11-22T15:56:18Z",
     "created_at": "2025-11-28T11:17:48Z",
     "html_url": "https://github.com/jay3-yy/BiliPai",
     "homepage": "https://t.me/bilipai666",
     "archived": false,
     "is_fork": false,
     "license": "GPL-3.0",
-    "size_kb": 532485,
-    "open_issues": 547
+    "size_kb": 534909,
+    "open_issues": 550
   },
   {
     "full_name": "JefferyHcool/BiliNote",
@@ -2701,7 +2726,7 @@
     "owner": "JefferyHcool",
     "description": "AI 视频笔记生成工具 让 AI 为你的视频做笔记",
     "language": "Python",
-    "stars": 7802,
+    "stars": 7812,
     "forks": 992,
     "topics": [],
     "pushed_at": "2026-09-01T03:33:03Z",
@@ -2761,7 +2786,7 @@
     "owner": "macrozheng",
     "description": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。",
     "language": "Java",
-    "stars": 85070,
+    "stars": 85074,
     "forks": 29805,
     "topics": [
       "docker",
